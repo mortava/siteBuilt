@@ -1,3 +1,4 @@
 {
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "buildCommand": "npm install && npm run build 2>&1 || (echo 'BUILD FAILED' && cat .next/error.log 2>/dev/null || true && exit 1)"
 }
