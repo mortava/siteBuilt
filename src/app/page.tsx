@@ -17,6 +17,7 @@ export default function Home() {
           title="Get Pre-Qualified in Minutes"
           subtitle="Our AI-powered assistant guides you through a simple, conversational process to determine your home buying power. No hard credit pull required for pre-qualification."
           icon="bot"
+          iframeSrc="https://grow.g1wins.com/pricing-engine-embed?key=g1_live_Q6-g4lBz_gPbVWHonwS2Fowu0GVb9Dhe&borrowerMode=true&tab=ai"
         />
 
         <IframeSection
