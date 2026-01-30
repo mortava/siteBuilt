@@ -22,7 +22,7 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 md:py-40">
         <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
           <div

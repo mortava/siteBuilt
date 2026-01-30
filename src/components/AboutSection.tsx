@@ -33,12 +33,12 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="py-20 md:py-32 bg-background"
+      className="py-12 sm:py-16 md:py-24 bg-background"
       aria-labelledby="about-heading"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
           <h2
             id="about-heading"
             className="font-heading font-semibold text-3xl sm:text-4xl md:text-5xl text-foreground mb-6 text-balance"
@@ -52,23 +52,23 @@ export default function AboutSection() {
         </div>
 
         {/* Values Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {values.map((value, index) => (
             <div
               key={value.title}
-              className="group p-8 rounded-2xl bg-card border border-border/50 card-shadow hover:card-shadow-hover transition-all duration-300"
+              className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-card border border-border/50 card-shadow hover:card-shadow-hover transition-all duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-primary/20 transition-colors">
                 <value.icon
-                  className="w-7 h-7 text-primary"
+                  className="w-6 h-6 sm:w-7 sm:h-7 text-primary"
                   aria-hidden="true"
                 />
               </div>
-              <h3 className="font-heading font-semibold text-xl text-foreground mb-3">
+              <h3 className="font-heading font-semibold text-lg sm:text-xl text-foreground mb-2 sm:mb-3">
                 {value.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                 {value.description}
               </p>
             </div>
@@ -76,30 +76,30 @@ export default function AboutSection() {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
           <div className="text-center">
-            <div className="font-heading font-bold text-4xl md:text-5xl text-primary mb-2">
+            <div className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-primary mb-1 sm:mb-2">
               20+
             </div>
-            <div className="text-muted-foreground">Years Experience</div>
+            <div className="text-sm sm:text-base text-muted-foreground">Years Experience</div>
           </div>
           <div className="text-center">
-            <div className="font-heading font-bold text-4xl md:text-5xl text-primary mb-2">
+            <div className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-primary mb-1 sm:mb-2">
               5K+
             </div>
-            <div className="text-muted-foreground">Happy Clients</div>
+            <div className="text-sm sm:text-base text-muted-foreground">Happy Clients</div>
           </div>
           <div className="text-center">
-            <div className="font-heading font-bold text-4xl md:text-5xl text-primary mb-2">
+            <div className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-primary mb-1 sm:mb-2">
               $2B+
             </div>
-            <div className="text-muted-foreground">Loans Funded</div>
+            <div className="text-sm sm:text-base text-muted-foreground">Loans Funded</div>
           </div>
           <div className="text-center">
-            <div className="font-heading font-bold text-4xl md:text-5xl text-primary mb-2">
+            <div className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-primary mb-1 sm:mb-2">
               4.9
             </div>
-            <div className="text-muted-foreground">Client Rating</div>
+            <div className="text-sm sm:text-base text-muted-foreground">Client Rating</div>
           </div>
         </div>
       </div>

@@ -66,24 +66,28 @@ export default function Footer() {
             </p>
 
             <div className="text-background/80 text-sm leading-relaxed">
-              <p className="mb-2">
+              <p className="mb-3">
                 This site was built for:{" "}
                 <strong className="text-background">
                   Premier Mortgage Financial, LLC
                 </strong>{" "}
                 NMLS#64073
               </p>
-              <p>
-                2645 Appling STE 241 Memphis, TN 38133 | Need Help? Contact:{" "}
-                <strong className="text-background">Vivian Marlar</strong> |
-                NMLS#97598 |{" "}
+              <p className="mb-2">
+                2645 Appling STE 241 Memphis, TN 38133
+              </p>
+              <p className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-1 sm:gap-2">
+                <span>Need Help? Contact:{" "}
+                <strong className="text-background">Vivian Marlar</strong>{" "}
+                NMLS#97598</span>
+                <span className="hidden sm:inline">|</span>
                 <a
                   href="tel:901-606-3832"
                   className="hover:text-background underline underline-offset-2"
                 >
                   901-606-3832
-                </a>{" "}
-                |{" "}
+                </a>
+                <span className="hidden sm:inline">|</span>
                 <a
                   href="mailto:processor@pmfmemphis.com"
                   className="hover:text-background underline underline-offset-2"

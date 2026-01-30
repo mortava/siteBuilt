@@ -48,8 +48,9 @@ export default function Header() {
                 PMF
               </span>
             </div>
-            <span className="font-heading font-semibold text-lg text-foreground">
-              Premier Mortgage Financial
+            <span className="font-heading font-semibold text-sm sm:text-base md:text-lg text-foreground">
+              <span className="hidden sm:inline">Premier Mortgage Financial</span>
+              <span className="inline sm:hidden">Premier Mortgage</span>
             </span>
           </a>
 
