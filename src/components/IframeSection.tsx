@@ -195,7 +195,7 @@ export default function IframeSection({
                 <iframe
                   src={iframeSrc}
                   title={title}
-                  className="w-full h-[500px] md:h-[600px] border-0"
+                  className="w-full h-[600px] md:h-[900px] border-0"
                   loading="lazy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 />

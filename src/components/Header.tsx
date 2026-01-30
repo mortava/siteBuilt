@@ -40,16 +40,16 @@ export default function Header() {
           {/* Logo */}
           <a
             href="#"
-            className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg"
+            className="flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg"
             aria-label="Premier Mortgage Financial - Home"
           >
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center shadow-sm">
-              <span className="text-white font-heading font-bold text-lg">
-                P
+              <span className="text-white font-heading font-bold text-xs">
+                PMF
               </span>
             </div>
-            <span className="font-heading font-semibold text-lg hidden sm:block text-foreground">
-              Premier Mortgage
+            <span className="font-heading font-semibold text-lg text-foreground">
+              Premier Mortgage Financial
             </span>
           </a>
 
