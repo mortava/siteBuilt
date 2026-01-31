@@ -19,29 +19,29 @@ export default function Footer() {
         aria-label="Site footer"
       >
         {/* Main Footer Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-10">
           {/* Footer Links */}
           <nav
-            className="flex flex-wrap justify-center gap-x-6 gap-y-3 mb-8"
+            className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-2 mb-6"
             aria-label="Footer navigation"
           >
             <button
               onClick={() => setContactOpen(true)}
-              className="text-background/80 hover:text-background transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded px-2 py-1"
+              className="text-background/80 hover:text-background transition-colors text-xs sm:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded px-1.5 py-0.5"
             >
               Contact Us
             </button>
             <span className="text-background/40 hidden sm:inline">|</span>
             <button
               onClick={() => setTermsOpen(true)}
-              className="text-background/80 hover:text-background transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded px-2 py-1"
+              className="text-background/80 hover:text-background transition-colors text-xs sm:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded px-1.5 py-0.5"
             >
               Terms of Use
             </button>
             <span className="text-background/40 hidden sm:inline">|</span>
             <button
               onClick={() => setPrivacyOpen(true)}
-              className="text-background/80 hover:text-background transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded px-2 py-1"
+              className="text-background/80 hover:text-background transition-colors text-xs sm:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded px-1.5 py-0.5"
             >
               Privacy & Security
             </button>
@@ -50,7 +50,7 @@ export default function Footer() {
               href="https://nmlsconsumeraccess.org/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-background/80 hover:text-background transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded px-2 py-1"
+              className="inline-flex items-center gap-1 text-background/80 hover:text-background transition-colors text-xs sm:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-background/50 rounded px-1.5 py-0.5"
             >
               NMLS Consumer Access
               <ExternalLink className="w-3 h-3" aria-hidden="true" />
@@ -59,24 +59,24 @@ export default function Footer() {
           </nav>
 
           {/* Company Info */}
-          <div className="text-center space-y-4">
-            <p className="text-background/90 text-sm">
+          <div className="text-center space-y-3">
+            <p className="text-background/90 text-xs sm:text-sm">
               &copy;2026 TraceAOS the Leader in AI full stack solutions for the
               lending industry. All rights reserved.
             </p>
 
-            <div className="text-background/80 text-sm leading-relaxed">
-              <p className="mb-3">
+            <div className="text-background/80 text-xs sm:text-sm leading-relaxed">
+              <p className="mb-2">
                 This site was built for:{" "}
                 <strong className="text-background">
                   Premier Mortgage Financial, LLC
                 </strong>{" "}
                 NMLS#64073
               </p>
-              <p className="mb-2">
+              <p className="mb-1.5">
                 2645 Appling STE 241 Memphis, TN 38133
               </p>
-              <p className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-1 sm:gap-2">
+              <p className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-0.5 sm:gap-2">
                 <span>Need Help? Contact:{" "}
                 <strong className="text-background">Vivian Marlar</strong>{" "}
                 NMLS#97598</span>
@@ -101,8 +101,8 @@ export default function Footer() {
 
         {/* Legal Disclaimer */}
         <div className="border-t border-background/10">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <p className="text-background/60 text-xs text-center leading-relaxed">
+          <div className="max-w-4xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-5">
+            <p className="text-background/60 text-[10px] sm:text-xs text-center leading-relaxed">
               By using this site, you authorize us to contact you by phone,
               email, or text (message/data rates may apply), including
               AI-assisted communications, even if you are on a Do Not Call list.
@@ -116,13 +116,13 @@ export default function Footer() {
 
         {/* Equal Housing Logo */}
         <div className="border-t border-background/10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center items-center gap-4">
+          <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-3 flex justify-center items-center gap-3">
             <div
-              className="flex items-center gap-2 text-background/60 text-xs"
+              className="flex items-center gap-1.5 text-background/60 text-xs"
               aria-label="Equal Housing Lender"
             >
               <svg
-                className="w-6 h-6"
+                className="w-5 h-5"
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 aria-hidden="true"

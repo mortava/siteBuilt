@@ -24,54 +24,54 @@ export default function IframeSection({
   return (
     <section
       id={id}
-      className={`py-12 sm:py-16 md:py-20 ${reversed ? "bg-muted/30" : "bg-background"}`}
+      className={`py-8 sm:py-10 md:py-12 ${reversed ? "bg-muted/30" : "bg-background"}`}
       aria-labelledby={`${id}-heading`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         {/* Header - Centered */}
-        <div className="text-center mb-8 sm:mb-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            <IconComponent className="w-4 h-4" aria-hidden="true" />
+        <div className="text-center mb-4 sm:mb-6">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:py-1.5 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium mb-2 sm:mb-3">
+            <IconComponent className="w-3.5 h-3.5 sm:w-4 sm:h-4" aria-hidden="true" />
             <span>{icon === "bot" ? "AI-Powered" : "Instant Quote"}</span>
           </div>
 
           <h2
             id={`${id}-heading`}
-            className="font-heading font-semibold text-2xl sm:text-3xl md:text-4xl text-foreground mb-3 sm:mb-4"
+            className="font-heading font-semibold text-xl sm:text-2xl md:text-3xl text-foreground mb-1.5 sm:mb-2"
           >
             {title}
           </h2>
 
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto">
             {subtitle}
           </p>
         </div>
 
         {/* Iframe - Full Width */}
-        <div className="card-shadow rounded-xl sm:rounded-2xl overflow-hidden bg-white">
+        <div className="card-shadow rounded-lg sm:rounded-xl overflow-hidden bg-white">
           {iframeSrc ? (
             <iframe
               src={iframeSrc}
               title={title}
-              className="w-full h-[500px] sm:h-[650px] md:h-[750px] lg:h-[850px] border-0"
+              className="w-full h-[480px] sm:h-[580px] md:h-[680px] lg:h-[780px] border-0"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             />
           ) : (
-            <div className="w-full h-[400px] sm:h-[500px] flex items-center justify-center bg-gradient-to-br from-muted/50 to-muted">
-              <div className="text-center p-6 sm:p-8">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+            <div className="w-full h-[350px] sm:h-[450px] flex items-center justify-center bg-gradient-to-br from-muted/50 to-muted">
+              <div className="text-center p-4 sm:p-6">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <IconComponent
-                    className="w-8 h-8 sm:w-10 sm:h-10 text-primary"
+                    className="w-7 h-7 sm:w-8 sm:h-8 text-primary"
                     aria-hidden="true"
                   />
                 </div>
-                <h3 className="font-heading font-semibold text-lg sm:text-xl text-foreground mb-2">
+                <h3 className="font-heading font-semibold text-base sm:text-lg text-foreground mb-1.5">
                   {icon === "bot"
                     ? "AI Pre-Qual Assistant"
                     : "Rate Quote Calculator"}
                 </h3>
-                <p className="text-muted-foreground text-sm sm:text-base">
+                <p className="text-muted-foreground text-sm">
                   Embed URL will be configured here
                 </p>
               </div>
